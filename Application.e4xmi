@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId=" menu:org.eclipse.ui.main.menu " label="Phema Executor" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Q-rCsHMMEeese_n_ez0gaw" elementId="phemaexecutor.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_Rr4G8HMMEeese_n_ez0gaw" elementId="phemaexecutor.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_UNquQHMMEeese_n_ez0gaw" elementId="phemaexecutor.partsashcontainer.0" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_f_xdIHkcEeeeCIRdJd9VBw" elementId="phemaexecutor.partsashcontainer.2">
+            <children xsi:type="basic:PartStack" xmi:id="_YDbe4HMMEeese_n_ez0gaw" elementId="phemaexecutor.partstack.0">
+              <children xsi:type="basic:Part" xmi:id="_ZKlUMHMMEeese_n_ez0gaw" elementId="phemaexecutor.part.i2b2Connections" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.part.I2B2ListPart" label="i2b2"/>
+              <children xsi:type="basic:Part" xmi:id="_lrB9AHMMEeese_n_ez0gaw" elementId="phemaexecutor.part.ohdsiConnections" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.part.OHDSIListPart" label="OHDSI"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_f8lMcHMMEeese_n_ez0gaw" elementId="phemaexecutor.partstack.1">
+              <children xsi:type="basic:Part" xmi:id="_p4LdMHOsEeese_n_ez0gaw" elementId="phemaexecutor.part.i2b2ConnDetails" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.part.I2B2ConnectionPart" label="i2b2 Connection Details"/>
+              <children xsi:type="basic:Part" xmi:id="_GGibIABcEei2e_zuC9HAEg" elementId="phemaexecutor.part.ohdsiConnDetails" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.part.OHDSIConnectionPart" label="OHDSI Connection Details"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_jOV4IHMMEeese_n_ez0gaw" elementId="phemaexecutor.partsashcontainer.1">
+            <children xsi:type="basic:PartStack" xmi:id="_j6vEEHMMEeese_n_ez0gaw" elementId="phemaexecutor.partstack.2">
+              <children xsi:type="basic:Part" xmi:id="_uO0tUHOsEeese_n_ez0gaw" elementId="phemaexecutor.part.algorithm" label="HQMF Algorithm"/>
+              <children xsi:type="basic:Part" xmi:id="_TpHM0CFtEei_epMPbefQQA" elementId="phemaexecutor.part.pretty" label="HQMF Pretty"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_kaOccHMMEeese_n_ez0gaw" elementId="phemaexecutor.partstack.3">
+              <children xsi:type="basic:Part" xmi:id="_w5FUIHOsEeese_n_ez0gaw" elementId="phemaexecutor.part.executionResults" containerData="" label="Execution Results" closeable="true"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_KJphEHMLEeese_n_ez0gaw" elementId="menu:org.eclipse.ui.main.menu ">
+      <children xsi:type="menu:Menu" xmi:id="_OWKk0HMLEeese_n_ez0gaw" elementId="" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_b93woHMLEeese_n_ez0gaw" elementId="" label="Open HQMF File" iconURI="platform:/plugin/PhemaExecutor/icons/toolbar_open_element.png" command="_74bToHMJEeese_n_ez0gaw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_hf7D8HMLEeese_n_ez0gaw" elementId="" label="Save HQMF File" iconURI="platform:/plugin/PhemaExecutor/icons/save_edit.png" command="_-yoa8HMJEeese_n_ez0gaw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qMzjsHxPEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.importhqmffile" label="Import HQMF File" iconURI="platform:/plugin/PhemaExecutor/icons/import_wiz.png" command="_PtKgUHxIEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lfhtEHMLEeese_n_ez0gaw" elementId="" label="Exit" iconURI="" command="_1lFGQHMJEeese_n_ez0gaw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_VY5nwHMLEeese_n_ez0gaw" elementId="" label="Edit">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_w1nqwHxPEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.undo" label="Undo" iconURI="platform:/plugin/PhemaExecutor/icons/undo_edit.png" command="_0f-WQHxHEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_34ZxAHxPEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.redo" label="Redo" iconURI="platform:/plugin/PhemaExecutor/icons/redo_edit.png" command="_6qNq8HxHEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_8XNeoHxPEeeeCIRdJd9VBw" elementId="phemaexecutor.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_9Xt5YHxPEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.cut" label="Cut" iconURI="platform:/plugin/PhemaExecutor/icons/cut_edit.png" command="_BSdxUHxIEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_AmvaIHxQEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.copy" label="Copy" iconURI="platform:/plugin/PhemaExecutor/icons/copy_edit.png" command="_FJ6kAHxIEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_FdlNQHxQEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.paste" label="Paste" iconURI="platform:/plugin/PhemaExecutor/icons/paste_edit.png" command="_J0AUkHxIEeeeCIRdJd9VBw"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Qj9EwHxQEeeeCIRdJd9VBw" elementId="phemaexecutor.menuseparator.1"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ctwIIHxQEeeeCIRdJd9VBw" elementId="phemaexecutor.handledmenuitem.delete" label="Delete" iconURI="platform:/plugin/PhemaExecutor/icons/delete_edit.png" command="_NNVn4HxIEeeeCIRdJd9VBw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_ZXiAgHMLEeese_n_ez0gaw" elementId="" label="About">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mZW-MHYjEeez8__xYo0I4Q" elementId="" label="About" command="_BKqCQHMKEeese_n_ez0gaw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_AToVkHYpEeez8__xYo0I4Q" elementId="" label="Configure i2b2" command="_TOL7EHYpEeez8__xYo0I4Q"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_vbPvUHMLEeese_n_ez0gaw" elementId="phemaexecutor.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_xD9ZkHMLEeese_n_ez0gaw" elementId=" toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_yzLUcHMLEeese_n_ez0gaw" elementId="" label="Open" iconURI="platform:/plugin/PhemaExecutor/icons/toolbar_open_element.png" command="_74bToHMJEeese_n_ez0gaw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_3W27AHMLEeese_n_ez0gaw" elementId="" label="Save" iconURI="platform:/plugin/PhemaExecutor/icons/save_edit.png" command="_-yoa8HMJEeese_n_ez0gaw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_o8_H4HMKEeese_n_ez0gaw" elementId="handler.quitCommand" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.handler.QuitHandler" command="_1lFGQHMJEeese_n_ez0gaw"/>
+  <handlers xmi:id="_wHKPkHMKEeese_n_ez0gaw" elementId="handler.openCommand" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.handler.OpenHandler" command="_74bToHMJEeese_n_ez0gaw"/>
+  <handlers xmi:id="_0C4eQHMKEeese_n_ez0gaw" elementId="handler.saveCommand" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.handler.SaveHandler" command="_-yoa8HMJEeese_n_ez0gaw"/>
+  <handlers xmi:id="_3zS00HMKEeese_n_ez0gaw" elementId="handler.aboutCommand" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.handler.AboutHandler" command="_BKqCQHMKEeese_n_ez0gaw"/>
+  <handlers xmi:id="_QOz_4HYpEeez8__xYo0I4Q" elementId="phemaexecutor.handler.0" contributionURI="bundleclass://PhemaExecutor/org.projectphema.rcp.handler.I2B2Handler" command="_TOL7EHYpEeez8__xYo0I4Q"/>
+  <bindingTables xmi:id="_iS6u8HxSEeeeCIRdJd9VBw" elementId="phemaexecutor.bindingtable.0">
+    <bindings xmi:id="_kDacMHxSEeeeCIRdJd9VBw" elementId="phemaexecutor.keybinding.open" keySequence="M1+O" command="_74bToHMJEeese_n_ez0gaw"/>
+    <bindings xmi:id="_ntKxIHxSEeeeCIRdJd9VBw" elementId="phemaexecutor.keybinding.save" keySequence="M1+S" command="_-yoa8HMJEeese_n_ez0gaw"/>
+    <bindings xmi:id="_rm-7UHxSEeeeCIRdJd9VBw" elementId="phemaexecutor.keybinding.cut" keySequence="M1+X" command="_BSdxUHxIEeeeCIRdJd9VBw"/>
+    <bindings xmi:id="_tn_JwHxSEeeeCIRdJd9VBw" elementId="phemaexecutor.keybinding.paste" keySequence="M1+V" command="_J0AUkHxIEeeeCIRdJd9VBw"/>
+    <bindings xmi:id="_xVTJAHxSEeeeCIRdJd9VBw" elementId="phemaexecutor.keybinding.copy" keySequence="M1+C" command="_FJ6kAHxIEeeeCIRdJd9VBw"/>
+  </bindingTables>
+  <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_1lFGQHMJEeese_n_ez0gaw" elementId="org.eclipse.ui.file.exit " commandName="quitCommand"/>
+  <commands xmi:id="_74bToHMJEeese_n_ez0gaw" elementId="org.eclipse.ui.file.open " commandName="openCommand"/>
+  <commands xmi:id="_-yoa8HMJEeese_n_ez0gaw" elementId="org.eclipse.ui.file.save " commandName="saveCommand"/>
+  <commands xmi:id="_BKqCQHMKEeese_n_ez0gaw" elementId="org.eclipse.ui.help.aboutAction " commandName="aboutCommand"/>
+  <commands xmi:id="_TOL7EHYpEeez8__xYo0I4Q" elementId="phemaexecutor.command.configure" commandName="i2b2ConfigureCommand"/>
+  <commands xmi:id="_0f-WQHxHEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.undo" commandName="undoCommand"/>
+  <commands xmi:id="_6qNq8HxHEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.redo" commandName="redoCommand"/>
+  <commands xmi:id="_BSdxUHxIEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.cut" commandName="cutCommand"/>
+  <commands xmi:id="_FJ6kAHxIEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.copy" commandName="copyCommand"/>
+  <commands xmi:id="_J0AUkHxIEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.paste" commandName="pasteCommand"/>
+  <commands xmi:id="_NNVn4HxIEeeeCIRdJd9VBw" elementId="org.eclipse.ui.edit.delete" commandName="deleteCommand"/>
+  <commands xmi:id="_PtKgUHxIEeeeCIRdJd9VBw" elementId="org.eclipse.ui.file.import" commandName="importCommand"/>
+  <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_c3AF1cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_c3AF1sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_c3AF18jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_c3AF2MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
